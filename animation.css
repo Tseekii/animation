@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+}
+.background {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sun {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: url("./sun.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation-name: rotation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  background-color: aqua;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.world {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("./world.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-color: gold;
+
+  transform-origin: -150px 50px;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
